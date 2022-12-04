@@ -1,0 +1,9 @@
+dagster
+mlflow
+numpy
+pandas
+scikit-learn
+
+[dev]
+dagit
+pytest
