@@ -1,6 +1,13 @@
 # dagster_mlflow_project
+This is an example ml pipeline with mlfow, dagster, and github actions
 
-This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/getting-started/create-new-project).
+The goal is to solve for these challenges:
+* How to track experiments --> MLflow
+* How to manage the various steps in a ML pipeline --> Dagster
+* How to confirm code changes don't break the project --> Github Actions
+
+
+## Standard Dagster Setup
 
 ## Getting started
 
