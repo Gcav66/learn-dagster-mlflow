@@ -34,4 +34,4 @@ jobs:
       # Run our pipeline
       - name: Run mlflow pipeline 
         run: |
-          dagster job execute -f gus_dagster_project/repository.py --job daily_refresh
+          dagster job execute -f dagster_mlflow_project/repository.py --job daily_refresh
