@@ -32,8 +32,8 @@ jobs:
       # To Do
       - name: Create Model Dir
         run: |
-          mkdir sk_models
-                
+          mkdir /home/runner/work/learn-dagster-mlflow/learn-dagster-mlflow/sk_models
+
       # Run our pipeline
       - name: Run mlflow pipeline 
         run: |

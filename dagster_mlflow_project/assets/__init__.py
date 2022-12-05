@@ -80,7 +80,7 @@ def run():
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         logging.debug(f'Tracking URL: {tracking_url_type_store}')
-        
+
 
         # Model registry does not work with file store
         if tracking_url_type_store != "file":
@@ -91,6 +91,6 @@ def run():
             # https://mlflow.org/docs/latest/model-registry.html#api-workflow
             mlflow.sklearn.log_model(lr, "sk_models", registered_model_name="ElasticnetWineModel")
         else:
-            mlflow.sklearn.log_model(lr, "sk_models")
+            mlflow.sklearn.log_model(lr, "/home/runner/work/learn-dagster-mlflow/learn-dagster-mlflow/sk_models/sk_models")
     print("Model training complete")
     return True
