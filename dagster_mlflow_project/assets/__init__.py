@@ -91,6 +91,6 @@ def run():
             # https://mlflow.org/docs/latest/model-registry.html#api-workflow
             mlflow.sklearn.log_model(lr, "sk_models", registered_model_name="ElasticnetWineModel")
         else:
-            mlflow.sklearn.log_model(lr, "/home/runner/work/learn-dagster-mlflow/learn-dagster-mlflow/sk_models")
+            mlflow.sklearn.log_model(lr, "sk_models")
     print("Model training complete")
     return True
