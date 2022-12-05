@@ -24,9 +24,13 @@ logger = logging.getLogger(__name__)
 alpha=0.8
 l1_ratio=0.8
 
-#LOCAL_DB='sqlite:////Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow/gusmodel.db'
-LOCAL_DB = os.environ['LOCAL_DB']
-mlflow.set_tracking_uri(LOCAL_DB)
+try:
+    os.environ['db_flag'] == "LOCAL"
+    LOCAL_DB='sqlite:////Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow/gusmodel.db'
+    mlflow.set_tracking_uri(LOCAL_DB)
+except KeyError:
+    LOCAL_DB=''
+
 
 def eval_metrics(actual, pred):
     rmse = np.sqrt(mean_squared_error(actual, pred))

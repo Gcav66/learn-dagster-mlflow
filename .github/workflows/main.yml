@@ -8,8 +8,8 @@ on:
     branches:
       - main
 env:
-  LOCAL_DB: ''
-  
+  DB_FLAG: CI
+
 jobs:
   build:
     runs-on: ubuntu-latest
