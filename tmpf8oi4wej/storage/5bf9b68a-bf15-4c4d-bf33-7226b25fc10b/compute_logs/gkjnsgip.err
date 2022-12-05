@@ -1,0 +1,14 @@
+[32m2022-12-05 15:15:50 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5bf9b68a-bf15-4c4d-bf33-7226b25fc10b - 6943 - LOGS_CAPTURED - Started capturing logs in process (pid: 6943).
+[32m2022-12-05 15:15:50 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5bf9b68a-bf15-4c4d-bf33-7226b25fc10b - 6943 - run - STEP_START - Started execution of step "run".
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow, universal_newlines=False, shell=None, istream=<valid stream>)
+DEBUG:root:Metrics logged
+DEBUG:root:Tracking URL: file
+[32m2022-12-05 15:15:52 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5bf9b68a-bf15-4c4d-bf33-7226b25fc10b - 6943 - run - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2022-12-05 15:15:52 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5bf9b68a-bf15-4c4d-bf33-7226b25fc10b - run - Writing file at: /Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow/tmpf8oi4wej/storage/run
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+[32m2022-12-05 15:15:52 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5bf9b68a-bf15-4c4d-bf33-7226b25fc10b - 6943 - run - ASSET_MATERIALIZATION - Materialized value run.
+[32m2022-12-05 15:15:52 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5bf9b68a-bf15-4c4d-bf33-7226b25fc10b - 6943 - run - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2022-12-05 15:15:52 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 5bf9b68a-bf15-4c4d-bf33-7226b25fc10b - 6943 - run - STEP_SUCCESS - Finished execution of step "run" in 1.92s.
