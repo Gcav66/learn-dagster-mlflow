@@ -30,7 +30,10 @@ jobs:
       
       # Run our smoke tests
       # To Do
-      
+      - name: Create Model Dir
+        run: |
+          mkdir sk_models
+                
       # Run our pipeline
       - name: Run mlflow pipeline 
         run: |
