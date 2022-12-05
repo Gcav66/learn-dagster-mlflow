@@ -21,7 +21,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-alpha=0.1
+alpha=1
 l1_ratio=0.8
 
 try:
