@@ -22,7 +22,7 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 alpha=.9
-l1_ratio=0.8
+l1_ratio=1.0
 
 if os.environ['DB_FLAG'] == "LOCAL":
     LOCAL_DB='sqlite:////Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow/gusmodel.db'

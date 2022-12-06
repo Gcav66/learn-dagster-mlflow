@@ -1,0 +1,5 @@
+Elasticnet model (alpha=0.900000, l1_ratio=1.000000):
+  RMSE: 0.8328839320331247
+  MAE: 0.6717554786775857
+  R2: 0.017115023571310006
+Model training complete

@@ -1,0 +1,19 @@
+[32m2022-12-06 11:12:58 -0500[0m - dagster - [34mDEBUG[0m - daily_refresh - 5927ff70-4b04-4556-939e-ca10280d16fd - 10637 - LOGS_CAPTURED - Started capturing logs in process (pid: 10637).
+[32m2022-12-06 11:12:58 -0500[0m - dagster - [34mDEBUG[0m - daily_refresh - 5927ff70-4b04-4556-939e-ca10280d16fd - 10637 - run - STEP_START - Started execution of step "run".
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow, universal_newlines=False, shell=None, istream=<valid stream>)
+DEBUG:root:Metrics logged
+DEBUG:root:Tracking URL: sqlite
+Registered model 'ElasticnetWineModel' already exists. Creating a new version of this model...
+2022/12/06 11:13:00 INFO mlflow.tracking._model_registry.client: Waiting up to 300 seconds for model version to finish creation.                     Model name: ElasticnetWineModel, version 10
+Created version '10' of model 'ElasticnetWineModel'.
+[32m2022-12-06 11:13:00 -0500[0m - dagster - [34mDEBUG[0m - daily_refresh - 5927ff70-4b04-4556-939e-ca10280d16fd - 10637 - run - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2022-12-06 11:13:00 -0500[0m - dagster - [34mDEBUG[0m - daily_refresh - 5927ff70-4b04-4556-939e-ca10280d16fd - run - Writing file at: /Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow/tmprgxkjguw/storage/run
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+[32m2022-12-06 11:13:00 -0500[0m - dagster - [34mDEBUG[0m - daily_refresh - 5927ff70-4b04-4556-939e-ca10280d16fd - 10637 - run - ASSET_MATERIALIZATION - Materialized value run.
+[32m2022-12-06 11:13:00 -0500[0m - dagster - [34mDEBUG[0m - daily_refresh - 5927ff70-4b04-4556-939e-ca10280d16fd - 10637 - run - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2022-12-06 11:13:00 -0500[0m - dagster - [34mDEBUG[0m - daily_refresh - 5927ff70-4b04-4556-939e-ca10280d16fd - 10637 - run - STEP_SUCCESS - Finished execution of step "run" in 2.18s.
