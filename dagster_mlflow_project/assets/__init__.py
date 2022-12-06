@@ -21,14 +21,14 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-alpha=0.1
+alpha=.9
 l1_ratio=0.8
 
-try:
-    os.environ['DB_FLAG'] == "LOCAL"
+if os.environ['DB_FLAG'] == "LOCAL":
     LOCAL_DB='sqlite:////Users/guscavanaugh/Workspace/learn_code/learn_mlflow/learn-dagster-mlflow/gusmodel.db'
     mlflow.set_tracking_uri(LOCAL_DB)
-except KeyError:
+
+if os.environ['DB_FLAG'] == "CI":
     logger.exception("No local sqlite db set - running on CI server?")
     LOCAL_DB=''
 
