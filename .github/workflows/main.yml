@@ -1,18 +1,18 @@
 name: CI
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} is learning GitHub Actions ML
 
 on:
   push:
     branches:
-      - main
+      - dev
   pull_request:
     branches:
-      - main
+      - dev
 env:
   DB_FLAG: CI
 
 jobs:
-  build:
+  Build:
     runs-on: ubuntu-latest
 
     steps:
@@ -38,3 +38,39 @@ jobs:
       - name: Run mlflow pipeline 
         run: |
           dagster job execute -f dagster_mlflow_project/repository.py --job daily_refresh
+
+  DeployDev:
+    name: Deploy to Dev 
+    if: github.event_name == 'pull_request'
+    needs: [Build]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Dev
+      url: 'http://dev.mymodel.com'
+    steps:
+      - name: Deploy
+        run: echo I am deploying! 
+
+  DeployStaging:
+    name: Deploy to Staging 
+    if: github.event.ref == 'refs/heads/dev'
+    needs: [Build]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Staging
+      url: 'http://test.mymodel.com'
+    steps:
+      - name: Deploy
+        run: echo I am deploying! 
+
+  DeployProd:
+    name: Deploy to Production 
+    needs: [DeployStaging]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Prod
+      url: 'http://prod.mymodel.com'
+    steps:
+      - name: Deploy
+        run: echo I am deploying! 
+
