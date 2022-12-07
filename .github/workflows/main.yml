@@ -46,10 +46,10 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Dev
-      url: 'http://dev.mymodel.com'
+      url: 'http://dev.mymodel.endpoint'
     steps:
       - name: Deploy
-        run: echo I am deploying! 
+        run: echo I am deploying to Dev! 
 
   DeployStaging:
     name: Deploy to Staging 
@@ -58,10 +58,10 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Staging
-      url: 'http://test.mymodel.com'
+      url: 'http://test.mymodel.endpoint'
     steps:
       - name: Deploy
-        run: echo I am deploying! 
+        run: echo I am deploying to Staging! 
 
   DeployProd:
     name: Deploy to Production 
@@ -69,8 +69,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Prod
-      url: 'http://prod.mymodel.com'
+      url: 'http://prod.mymodel.endpoint'
     steps:
       - name: Deploy
-        run: echo I am deploying! 
+        run: echo I am deploying to Prod! 
 
