@@ -5,6 +5,7 @@ The goal is to solve for these challenges:
 * How to track experiments --> MLflow
 * How to manage the various steps in a ML pipeline --> Dagster
 * How to confirm code changes don't break the project --> Github Actions
+* foo
 
 
 ## Standard Dagster Setup
